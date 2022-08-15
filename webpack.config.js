@@ -27,7 +27,13 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['css-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { url: false },
+          },
+        ],
       },
       {
         test: /\.ts$/,
@@ -35,8 +41,15 @@ module.exports = {
         exclude: /node_module/,
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(png|svg|jpg|jpeg|gif|)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },

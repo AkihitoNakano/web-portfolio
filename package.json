@@ -18,7 +18,9 @@
     "npm": "^8.17.0"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "nodemon": "^2.0.19",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.74.0",
