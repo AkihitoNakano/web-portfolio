@@ -11,18 +11,18 @@
     <div class="header-container">
       <a href="#">portfolio.js</a>
       <div class="nav">
-        <a href="#">about</a>
-        <a href="#">skills</a>
-        <a href="#">works</a>
-        <a href="#">contact</a>
+        <a href="#"><small>♤</small>profile</a>
+        <a href="#"><small>♢</small>skills</a>
+        <a href="#"><small>♧</small>works</a>
+        <a href="#"><small>♡</small>contact</a>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="about-container">
-      <h2 class="title">About</h2>
-
+    <!-- about -->
+    <div class="container about-container">
+      <h2 class="title">Profile</h2>
       <div class="profile-container">
         <img src="./images/me.jpeg" alt="my profile" class="prof-pic">
         <pre>
@@ -36,14 +36,200 @@
             
           </code>
         </pre>
-        <div class="link">
-          <a href="#"><img src="./images/github.png" alt="github"></a>
-          <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+      </div>
+      <div class="link">
+        <a href="#"><img src="./images/github.png" alt="github"></a>
+        <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+      </div>
+      <div class="text profile-introduce">
+        web/IT業界を目指す前は、コンピューターグラフィックス/VFXの業界で主に映画やTV、CMなどの映像合成に携わっておりました。
+        趣味でUNREAL ENGINEを使ったゲーム制作をしていたところプログラミングの面白さに目覚めいつの間にかWEB開発の業界を志すようになりました。
+        プログラミングに関しては独学で学習し、最近ではオリジナルのアプリとしてはTwitterライクな<a href="https://paiku575.com">575を投稿できるwebアプリケーション</a>を公開しております。
+        フロントエンドからバックエンドまで一通り学習し、フルスタックまたはバックエンドエンジニアの職に就きたいと考えております。
+      </div>
+
+    </div>
+
+    <div class="border"></div>
+    
+    <!-- skills -->
+    <div class="container skills-container">
+      <h2 class="title">Skills</h2>
+      <div class="skills-images">
+        <img src="./images/javascript.png" alt="javascript">
+        <img src="./images/typescript.png" alt="typescript">
+        <img src="./images/python.png" alt="python">
+        <img src="./images/node-js.png" alt="node.js">
+        <img src="./images/flask.svg" alt="flask">
+        <img src="./images/html.png" alt="html">
+        <img src="./images/css.png" alt="css">
+        <img src="./images/mongodb.png" alt="mongodb">
+        <img src="./images/mysql.png" alt="mysql">
+        <img src="./images/git.png" alt="git">
+        <img src="./images/webpack.png" alt="webpack">
+        <img src="./images/docker.png" alt="docker">
+        <img src="./images/cloud_storage.png" alt="cloud_storage">
+        <img src="./images/cloud_run.png" alt="cloud_run">
+        <img src="./images/vscode.png" alt="vscode">
+        <img src="./images/postman.png" alt="postman">
+        <img src="./images/XD.png" alt="adobe xd">
+        <img src="./images/ai.png" alt="illustrator">
+      </div>
+
+      <div class="skills-text-container">
+
+        <div class="skills long">
+          <h3 class="skill-title">JavaScript & Node.js</h3>
+          <p class="text"><a href="https://paiku575.com">Twitterライクな575を投稿するSNSアプリケーション</a>をフロントエンドはJavaScirpt、バックエンドは<br>
+            Node.jsで開発。フロントはReactなどのフレームワークを使用せずに全てValilaJSで記述しました。<br>
+            サーバー側はexpressフレームワークを使用してCRUD操作からmongo DB、外部クラウドストレージとの接続、API作成など基本的なことはできるようにしています。</p>
+        </div>
+        
+        <div class="skills long">
+          <h3 class="skill-title">TypeScript</h3>
+          <p class="text">このポートフォリオサイトの作成にTypeScriptを使用していますがそれ以外はチュートリアルをいくつかこなした程度です。
+            しかし、今後の個人開発では全てフロントもバックエンドもJavaScriptからTypeScriptに移行する予定です。</p>
+        </div>
+
+        <div class="skills long">
+          <h3 class="skill-title">MongoDB</h3>
+          <p class="text">575俳句投稿アプリではデータベースにmongoDBを使用。使用したきっかけはチュートリアルや教材等ではNode.jsとMongoDBの組み合わせが多かった為。Node.jsではmongooseのライブラリを使用してwebホスティングサービスのAtlasと連携。バックエンドでNode.jsと組み合わせるならMySQLよりnode.jsを使用したい。</p>
+        </div>
+
+        <!-- short -->
+        <div class="skills-short-container">
+
+          <div class="skills">
+            <h3 class="skill-title">HTML/CSS</h3>
+            <p class="text">基本的なことであればフレームワークなしでHTMLとCSSを使ってwebサイトをデザインできます。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">Python & Flask</h3>
+            <p class="text">Pythonを使用してデータベースから取得した文章を自動で取得しツイートするアプリケーションを開発したことがあります。使用したDBはsqlite3。<br>
+              その他、複数の連番画像からスプライトシートを作成するプログラム / CSVから文章を取得後自動ツイートするbot / passwordを生成するプログラム/webスクレイピング 等</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">MySQL</h3>
+            <p class="text">基本的なSQL文は記述可能。アプリケーション内に組み込んでNode.jsと接続したことはチュートリアル以外ではまだありません。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">Git</h3>
+            <p class="text">個人開発で使用する範囲のみ使用経験あり。基本的に全てのプロジェクトはGitで管理。branchを作ってmergeしたり現場を想定しながら作業しています。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">Webpack</h3>
+            <p class="text">このポートフォリオサイトはwebpackを使用しています。動的なwebアプリケーションでは現状難しい為使用していません。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title"> Docker</h3>
+            <p class="text">575アプリケーションをGCPのCloud Runにデプロイする際にコンテナが必要なためDockerを導入。docker-composeを使って開発環境を複数作ることができる。しかし、M1 MacではDockerでbuildしたimageがアップロードできなかった為gcloud buildsを使用したクラウドビルドを使用。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">GCP/Cloud Run</h3>
+            <p class="text">WebアプリケーションのデプロイにGoogle cloud platformのCloud Runを使用。Cliからコンテナイメージをビルドし自動的にCloud Runにアップロードできる。</p>
+          </div>
+  
+          <div class="skills">
+            <h3 class="skill-title">GCP/Cloud Storage</h3>
+            <p class="text">575アプリケーションで投稿する画像は全てCloud Storageで保管、管理している。Cloud StorageのAPIを使用いてアプリケーションとmongo DBと連携している。</p>
+          </div>
+        </div>
+
+      </div>
+
+ 
+     
+    </div>
+
+    <!-- works -->
+    <div class="border"></div>
+    
+    <div class="container works-container">
+      <h2 class="title">Works</h2>
+      <div class="works-contents">
+
+        <p class="sub-title">Paiku</p>
+        <p class="text">Twitterライクな575を投稿するSNSアプリケーションです。</p>
+        <p class="text">俳句や川柳を投稿してネット上で交流することができます。</p>
+        <p>👉<a href="https://paiku575.com"> https://paiku575.com</a></p>
+        <br>
+  
+        <div class="images-container">
+          <img class="popup-img" src="./images/index.png" alt="インデックスページ">
+          <img class="popup-img" src="./images/home.png" alt="トップページ">
+          <img class="popup-img" src="./images/profile.png" alt="プロフィールページ">
+          <img class="popup-img" src="./images/followers.png" alt="フォロワー確認ページ">
+          <img class="popup-img" src="./images/ranking.png" alt="ランキングページ">
+          <img class="popup-img" src="./images/topics.png" alt="トピックス">
+      </div>
+
+      <p class="sub-title">動画紹介</p>
+      <p class="text">動画でこのアプリの大まかな紹介をしております。</p>
+      <p class="text">４分程度の内容になりますので是非ご覧下さい。</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/I-VUspfA1WA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      <p class="sub-title">主な機能</p>
+      <ul class="app-functions-text">
+        <li>文章の投稿、画像の投稿、タグの追加</li>
+        <li>投稿の最新情報表示</li>
+        <li>アバターの設定</li>
+        <li>お気に入り登録</li>
+        <li>投票</li>
+        <li>返信</li>
+        <li>カードの削除</li>
+        <li>カードの共有</li>
+        <li>カードの経験値</li>
+        <li>ユーザーのフォロー</li>
+        <li>ユーザーの検索</li>
+        <li>ランキング</li>
+        <li>タグの一覧表示</li>
+        <li>メール認証</li>
+        <li>お問い合わせにDiscordと連携</li>
+      </ul>
+      
+        <p class="sub-title">システム構成図</p>
+        <img src="./images/system_structures.png" alt=""> 
+
+      </div>
+     
+      <div class="border"></div>
+
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <div class="contact-text">
+          <p class="text">何かありましたらTwitterのDMからどしどし連絡を下さい</p>
+          <div class="link">
+            <a href="https://twitter.com/aki_composite"><img src="./images/twitter.png" alt="twitter"></a>
+          </div>
         </div>
       </div>
     </div>
+
   </main>
 
+  <footer>
+    <p>©️ 2022 AKIHITO NAKANO</p>
+
+  </footer>
+
+  <template id="host"></template>
+
+  <template id="modal">
+    <div class="modal-back">
+      <img src="" alt="">
+
+    </div>
+  </template>
+
+  
 
 </body>
 </html>
