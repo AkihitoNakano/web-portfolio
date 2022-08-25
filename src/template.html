@@ -13,9 +13,9 @@
       <p>akihito Nakano</p>
     </div>
     <div class="nav-link-wrap">
-      <a href="#">Home</a>
-      <a href="#">Skill</a>
-      <a href="#">portfolio</a>
+      <p class="nav-link" id="homeBtn">Home</p>
+      <p class="nav-link" id="skillBtn">Skill</p>
+      <p class="nav-link" id="portfolioBtn">portfolio</p>
     </div>
   </nav>
 
@@ -33,35 +33,83 @@
 
     <div class="border"></div>
 
-    <div class="skill">
+    <!-- skills -->
+    <div class="container skill" id="skillEl">
+      <h1>Skills</h1>
       <div class="skills-wrap">
-        <div class="skill-box">
-          <img src="" alt="">
-          <h3>I can</h3>
-          <div class="text-wrap">
-            <img src="" alt="">
-            <p>frontend & backendエンジニアリング</p>
+        <div>
+          <div class="title japanese">
+            <h2>フロントエンド&</h2>
+            <h2>バックエンドエンジニアリング</h2>
           </div>
-          <div class="text-wrap">
-            <img src="" alt="">
-            <p>APIを使ったCRUD操作</p>
-          </div>
-          <div class="text-wrap">
-            <img src="" alt="">
-            <p>APIの作成</p>
-          </div>
-          <div class="text-wrap">
-            <img src="" alt="">
-            <p>Validation処理</p>
-          </div>
-          <div class="text-wrap">
-            <img src="" alt="">
-            <p>Twitterのような動的サイトの構築</p>
-          </div>
+          <ul class="list japanese">
+            <li>静的、動的サイトのコーディング</li>
+            <li>CRUD操作</li>
+            <li>APIの作成</li>
+            <li>DBの設計、操作</li>
+          </ul>
+          <img class="chart" src="./images/chart.png" alt="">
         </div>
-      </div>
+
+        <div class="skills-right">
+          <div class="title japanese">
+            <h2>使用言語、開発環境</h2>
+            <h2>フレームワーク</h2>
+          </div>
+          <ul class="list japanese">
+            <li>JavaScript / Node.js / Express</li>
+            <li>TypeScript</li>
+            <li>Python / Flask</li>
+            <li>MongoDB / MySQL</li>
+            <li>HTML / CSS</li>
+            <li>Webpack</li>
+            <li>Docker</li>
+            <li>GCP/Cloud Storage / Cloud Run</li>
+          </ul>
+        </div>
+      </div>  
 
     </div>
+
+    <div class="border"></div>
+
+<!-- portfolio -->
+    <div class="container portfolio" id="portfolioEl">
+      <h1>Portfolio</h1>
+      <h2 class="sub-text japanese">俳句、川柳、575が投稿できるSNS Webアプリケーション</h2>
+
+      <p class="middle-text japanese">
+       Node.jsとExpressで、メインのアプリケーションを開発しました。データベースにMongoDB、ストレージにGCPのCloud Storageを使用、gcloudでコンテナをビルドしGCPのCloud Runにデプロイ。
+      </p>
+
+      <div class="link-site">
+        <p class="weight-text japanese">Link</p>
+        <p>→</p>
+        <a href="https://paiku575.com">paiku575.com</a>
+      </div>
+      <div class="link-site">
+        <p class="weight-text japanese"> 解説ページ</p>
+        <p>→</p>
+        <a href="https://github.com/AkihitoNakano/web-portfolio">github</a>
+      </div>
+      
+
+
+      <img src="./images/window01.png" alt="">
+      
+    </div>
+
+    <div class="border"></div>
+
+    <!-- contact -->
+    <div class="container contact">
+      <h1>Contact</h1>
+      <ul class="contact-link">
+        <li><a href="https://twitter.com/aki_composite">twitter</a></li>
+        <li><a href="https://github.com/AkihitoNakano/web-portfolio">github</a></li>
+      </ul>
+    </div>
+
 
   </main>
   
