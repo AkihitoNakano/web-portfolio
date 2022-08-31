@@ -5,3 +5,4 @@ node_modules/
 src/images/
 README.html
 README.pdf
+*.map
